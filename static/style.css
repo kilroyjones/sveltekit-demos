@@ -1,0 +1,45 @@
+body {
+	padding: 20px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.columns {
+	display: flex;
+}
+
+.border-column {
+	flex: 1;
+}
+
+.center-column {
+	flex: 2;
+}
+
+@media (max-width: 768px) {
+	/*breakpoint*/
+	.columns {
+		flex-direction: column;
+	}
+}
+
+h3 {
+	margin-top: 40px;
+}
+
+p {
+	font-size: 18px;
+	line-height: 26px;
+}
+
+a {
+	color: rgb(0, 116, 71);
+}
+
+a:hover {
+	color: rgb(0, 160, 139);
+}
+
+b,
+strong {
+	color: rgb(143, 40, 0);
+}
