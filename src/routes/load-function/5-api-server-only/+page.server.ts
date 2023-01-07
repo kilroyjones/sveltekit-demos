@@ -1,4 +1,4 @@
-// /** @type {import('./$types').PageLoad} */ <-- Or this if using +page.server.js
+// /** @type {import('./$types').PageServerLoad} */ <-- Or this if using +page.server.js
 import type { PageServerLoad } from './$types';
 import { PRIVATE_API_KEY } from '$env/static/private';
 

@@ -1,18 +1,32 @@
 <script lang="ts">
 	// /** @type {import('./$types').PageData} */  <-- Or this if using +page.js
 	import type { PageData } from './$types'; //
+
 	export let data: PageData;
 </script>
 
-<h2>Load function [basic]</h2>
-<p>
-	This is a basic load function using +page.server.ts to return information that can be deserialized
-	using <a href="https://github.com/rich-harris/devalue">devalue</a>, which is similar to
-	JSON.stringify, but can do a big more. Because it's using
-	<strong>+page.server.ts</strong> it will be run on the server only. You can see this by checking the
-	console.log messages output in your browser's developer tools console and wherever you're running this
-	repository.
-</p>
-<p>
-	{data.person.name} | {data.person.email}
-</p>
+<div class="columns">
+	<div class="border-column" />
+
+	<div class="center-column">
+		<h1>Load function</h1>
+		<h4>[Server only]</h4>
+		<hr />
+		<p>
+			This is a basic load function is the same as the one used in the
+			<a href="/load-function/1-client-and-server">previous</a>
+			example, except that is using using <strong>+page.server.ts</strong>. This means that it will
+			only run on the server, and not the client. This keeps what you're doing in the load function
+			away from the user's prying eyes, but will require a call to the server each time a user
+			navigates back to the page. You can see this as the console.log will output on the server side
+			each time you return to the page.
+		</p>
+		<h3 class="program-output">Data returned from load function</h3>
+		<hr />
+		<p>
+			{data.person.name} | {data.person.email} | {data.person.rnd}
+		</p>
+	</div>
+
+	<div class="border-column" />
+</div>

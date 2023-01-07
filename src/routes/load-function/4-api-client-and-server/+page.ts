@@ -1,4 +1,4 @@
-// /** @type {import('./$types').PageLoad} */ <-- Or this if using +page.server.js
+// /** @type {import('./$types').PageLoad} */ <-- Or this if using +page.js
 import type { PageLoad } from './$types';
 
 export const load: PageLoad = async ({ fetch }) => {

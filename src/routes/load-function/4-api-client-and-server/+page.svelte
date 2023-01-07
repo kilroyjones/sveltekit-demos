@@ -4,20 +4,35 @@
 	export let data: PageData;
 </script>
 
-<h2>Load function [basic]</h2>
-<p>
-	This is a basic load function using +page.ts to return information that can be deserialized using <a
-		href="https://github.com/rich-harris/devalue">devalue</a
-	>, which is similar to JSON.stringify, but can do a big more. Because it's using
-	<strong>+page.ts</strong> it will be run on both the server and the client. You can see this by checking
-	the console.log messages output in your browser's developer tools console and wherever you're running
-	this repository.
-</p>
+<div class="columns">
+	<div class="border-column" />
 
-{#key data}
-	<ul>
-		{#each data.names as breed}
-			<li>{breed}</li>
-		{/each}
-	</ul>
-{/key}
+	<div class="center-column">
+		<h1>Load function</h1>
+		<h4>[API on client and server]</h4>
+		<hr />
+		<p>
+			This example shows an example of calling an API on the client and server side. You’ll can use
+			this sort of setup if you’re not using a third-party API which requires your private key.
+		</p>
+		<p>
+			In this example we use an <a href="https://dogapi.dog/">API for dogs</a> which is so kindly run
+			as free and open. In it we do some processing on the data returned and extract the names only before
+			returning that to our user.
+		</p>
+		<p>We fetch the data, do a little processing to extract the breeds only, and then return it.</p>
+		<h3 class="program-output">Data returned from load function</h3>
+		<hr />
+		<p>
+			{#key data}
+				<ul>
+					{#each data.names as breed}
+						<li>{breed}</li>
+					{/each}
+				</ul>
+			{/key}
+		</p>
+	</div>
+
+	<div class="border-column" />
+</div>

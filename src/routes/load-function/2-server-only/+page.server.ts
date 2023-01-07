@@ -1,4 +1,4 @@
-// /** @type {import('./$types').PageLoad} */ <-- Or this if using +page.server.js
+// /** @type {import('./$types').PageServerLoad} */ <-- Or this if using +page.server.js
 import type { PageServerLoad } from './$types';
 
 export const load: PageServerLoad = async () => {
@@ -7,7 +7,8 @@ export const load: PageServerLoad = async () => {
 	return {
 		person: {
 			name: 'Fred',
-			email: 'fred@fred.com'
+			email: 'fred@fred.com',
+			rnd: Math.floor(Math.random() * 10000)
 		}
 	};
 };
