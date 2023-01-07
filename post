@@ -1,4 +1,3 @@
-hugo --cleanDestinationDir
 git add *
-git commit -m 'updated blog'
+git commit -m 'updated'
 git push origin main
