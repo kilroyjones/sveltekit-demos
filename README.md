@@ -1,4 +1,4 @@
-# Svelte demos
+# SvelteKit demos
 
 This repo contains small, usually single-page demos, illustrating some of the features of
 Svelte and SvelteKit. Each is defined as their own route and runs independently of others.
