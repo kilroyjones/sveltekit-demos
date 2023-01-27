@@ -6,6 +6,10 @@ This is as much to help others as it is to better teach myself. In some cases yo
 additional blog posts on my <a href="https://thespatula.io">site</a> which will often lump together
 one topic's examples. That being said, everything is, for the most part, duplicated here.
 
+# What's currently covered
+
+- Load function
+
 # How to install
 
 To run this you can clone or download the repository
