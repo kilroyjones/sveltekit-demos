@@ -1,139 +1,149 @@
 /* PAGE MANAGEMENT */
 body {
-	font-family: 'Work Sans', sans-serif;
-	background-color: rgb(250, 254, 255);
-	font-weight: 600;
-	margin: 0rem;
-	padding: 0rem;
-	margin-bottom: 4rem;
+  font-family: "Work Sans", sans-serif;
+  background-color: rgb(250, 254, 255);
+  font-weight: 600;
+  margin: 0rem;
+  padding: 0rem;
+  margin-bottom: 4rem;
+  overflow-y: visible;
+  overflow-y: scroll;
 }
 
 .columns {
-	margin-top: 0rem;
-	display: flex;
+  margin-top: 0rem;
+  display: flex;
 }
 
 .border-column {
-	flex: 2;
+  flex: 2;
 }
 
 .center-column {
-	flex: 3;
+  flex: 3;
 }
 
 @media (max-width: 1024px) {
-	.border-column {
-		flex: 1;
-	}
+  .border-column {
+    flex: 1;
+  }
 
-	.center-column {
-		flex: 3;
-	}
+  .center-column {
+    flex: 3;
+  }
 }
 
 @media (max-width: 480px) {
-	.columns {
-		flex-direction: column;
-	}
+  .columns {
+    flex-direction: column;
+  }
 }
 
 /* TEXT CONTENT */
 h1 {
-	font-family: 'Candal', sans-serif;
-	font-size: 2.5rem;
-	color: #222;
-	margin-bottom: 0px;
+  font-family: "Candal", sans-serif;
+  font-size: 2.5rem;
+  color: #222;
+  margin-bottom: 0px;
 }
 
 h4 {
-	font-size: 1.2rem;
-	font-weight: 600;
-	margin-top: 0.4rem;
-	color: #3182bd;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 0.4rem;
+  color: #3182bd;
 }
 
 h3 {
-	font-size: 1.2rem;
-	font-weight: 600;
-	color: #3182bd;
-	margin-top: 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #3182bd;
+  margin-top: 2rem;
 }
 
 p {
-	font-size: 18px;
-	line-height: 26px;
-	font-weight: 600;
-	color: #303030;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 600;
+  color: #303030;
 }
 
 a {
-	color: #3182bd;
+  color: #3182bd;
 }
 
 a:hover {
-	color: #3182bd;
+  color: #3182bd;
 }
 
 b,
 strong {
-	font-weight: 600;
-	color: #31a354;
+  font-weight: 600;
+  color: #31a354;
+}
+
+ul {
+  line-height: 24px;
+}
+
+ul > li {
+  margin-bottom: 6px;
 }
 
 /* CONTAINERS / DIVIDERS */
 .topic-container {
-	border-radius: 5px;
+  border-radius: 5px;
 }
 
 hr {
-	border-color: #3182bd88;
-	opacity: 0.5;
+  border-color: #3182bd88;
+  opacity: 0.5;
 }
 
 /* TABLES */
 .table-container {
-	margin-top: 20px;
-	width: 100%;
+  margin-top: 20px;
+  width: 100%;
 }
 
 table {
-	width: inherit;
-	border-collapse: collapse;
-	border: 0px;
-	border-style: hidden;
+  width: inherit;
+  border-collapse: collapse;
+  border: 0px;
+  border-style: hidden;
 }
 
 th {
-	color: #fff;
-	background-color: #3182bd;
-	border: 0px solid;
-	padding-left: 6px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	text-align: left;
+  color: #fff;
+  background-color: #3182bd;
+  border: 0px solid;
+  padding-left: 6px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: left;
 }
 
 td {
-	padding-right: 20px;
-	padding-top: 6px;
-	padding-bottom: 6px;
-	padding-left: 6px;
+  padding-right: 20px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 6px;
 }
 
 /* BUTTONS AND INPUT */
 button {
-	padding: 6px;
-	min-width: 50px;
-	border-radius: 4px;
-	border: 0px solid #3182bd;
-	background-color: #3182bd;
-	color: #fff;
+  padding: 6px;
+  min-width: 50px;
+  border-radius: 4px;
+  border: 0px solid #3182bd;
+  background-color: #3182bd;
+  color: #fff;
 }
 
 input {
-	padding: 4px;
-	border-radius: 4px;
-	border: 1px solid #3182bd;
+  padding: 4px;
+  border-radius: 4px;
+  border: 1px solid #3182bd;
 }
 
 /* navbar https://webdesign.tutsplus.com/tutorials/how-to-build-a-responsive-navigation-bar-with-flexbox--cms-33535*/

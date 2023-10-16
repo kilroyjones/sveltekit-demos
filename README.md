@@ -26,6 +26,13 @@ npm install
 // or yarn install
 ```
 
+Initialize the database using Prisma. This is a file-based database, so nothing special is required.
+
+```bash
+npx prisma generate
+npx prisma db push
+```
+
 Then run as any normal SvelteKit project.
 
 ```bash
