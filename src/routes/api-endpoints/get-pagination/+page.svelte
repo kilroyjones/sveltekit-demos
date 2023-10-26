@@ -11,7 +11,7 @@
   }
 
   async function updateUsers(page: Number) {
-    let response = await fetch("/endpoints/api/get-pagination?page=" + page, {
+    let response = await fetch("/api-endpoints/api/get-pagination?page=" + page, {
       method: "get",
     });
     let update: Update = await response.json();

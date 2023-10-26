@@ -5,7 +5,7 @@
   let users: User[] = [];
 
   async function delete_user(id: number) {
-    const response = await fetch("/endpoints/api/delete", {
+    const response = await fetch("/api-endpoints/api/delete", {
       method: "DELETE",
       body: JSON.stringify({
         id: id,
@@ -21,7 +21,7 @@
   }
 
   async function updateUsers() {
-    let getResponse = await fetch("/endpoints/api/get-all", {
+    let getResponse = await fetch("/api-endpoints/api/get-all", {
       method: "get",
     });
     users = await getResponse.json();

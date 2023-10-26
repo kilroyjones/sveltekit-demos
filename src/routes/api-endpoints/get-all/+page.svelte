@@ -4,15 +4,15 @@
 
   let users: User[] = [];
 
-  async function updateUsers() {
-    let getResponse = await fetch("/endpoints/api/get-all", {
+  async function getAllUser() {
+    let getResponse = await fetch("/api-endpoints/api/get-all", {
       method: "get",
     });
     users = await getResponse.json();
   }
 
   onMount(async () => {
-    updateUsers();
+    getAllUser();
   });
 </script>
 

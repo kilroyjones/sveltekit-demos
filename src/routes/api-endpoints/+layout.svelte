@@ -7,11 +7,11 @@
   }
 
   let routes: Route[] = [
-    { href: "/endpoints/post", text: "Post" },
-    { href: "/endpoints/get-all", text: "Get all" },
-    { href: "/endpoints/get-pagination", text: "Pagination" },
-    { href: "/endpoints/delete", text: "Delete" },
-    { href: "/endpoints/put", text: "Put" },
+    { href: "/api-endpoints/post", text: "Post" },
+    { href: "/api-endpoints/get-all", text: "Get all" },
+    { href: "/api-endpoints/get-pagination", text: "Pagination" },
+    { href: "/api-endpoints/delete", text: "Delete" },
+    { href: "/api-endpoints/put", text: "Put" },
   ];
 </script>
 

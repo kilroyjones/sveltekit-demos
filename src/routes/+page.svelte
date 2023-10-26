@@ -17,13 +17,13 @@
     </div>
     <hr />
 
-    <h3><a href="/endpoints">Endpoints</a></h3>
+    <h3><a href="/api-endpoints">API endpoints</a></h3>
     <div class="section">
-      <li><a href="/endpoints/get-all">Get [all]</a></li>
-      <li><a href="/endpoints/post">Post</a></li>
-      <li><a href="/endpoints/get-pagination">Get [pagination]</a></li>
-      <li><a href="/endpoints/delete">Delete</a></li>
-      <li><a href="/endpoints/put">Put</a></li>
+      <li><a href="/api-endpoints/get-all">Get [all]</a></li>
+      <li><a href="/api-endpoints/post">Post</a></li>
+      <li><a href="/api-endpoints/get-pagination">Get [pagination]</a></li>
+      <li><a href="/api-endpoints/delete">Delete</a></li>
+      <li><a href="/api-endpoints/put">Put</a></li>
     </div>
     <hr />
 

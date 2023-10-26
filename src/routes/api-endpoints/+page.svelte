@@ -5,7 +5,7 @@
   let users: User[] = [];
 
   async function get() {
-    const response = await fetch("./endpoints/api/get-all", {
+    const response = await fetch("./api-endpoints/api/get-all", {
       method: "get",
     });
     users = await response.json();

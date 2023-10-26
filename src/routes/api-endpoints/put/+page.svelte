@@ -5,7 +5,7 @@
   let users: User[] = [];
 
   async function put(user: User) {
-    const response = await fetch("/endpoints/api/put", {
+    const response = await fetch("/api-endpoints/api/put", {
       method: "PUT",
       body: JSON.stringify(user),
       headers: {
@@ -20,7 +20,7 @@
   }
 
   async function updateUsers() {
-    let getResponse = await fetch("/endpoints/api/get-all", {
+    let getResponse = await fetch("/api-endpoints/api/get-all", {
       method: "get",
     });
     users = await getResponse.json();
